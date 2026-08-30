@@ -1,0 +1,112 @@
+.Hero{
+    margin: 0px 60px;
+    margin-top: 60px;
+}
+.herotext{
+    color: white;
+    text-shadow: 4px 4px 20px rgb(59, 54, 54);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: 'outfit';
+}
+.explore{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: fit-content;
+    margin-top: 50px;
+    background: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.explore img{
+    width: 30px;
+    height: auto;
+}
+.explore p{
+    color: #292929;
+    font-family: 'outfit';
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    
+}
+.dot-play{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.herodots{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.interaction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 600px;
+}
+.hero-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+.hero-dot.orange{
+    background: orangered;
+}
+.play{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-family: 'outfit';
+    font-size: 20px;
+    margin-top: 100px;
+}
+.play img{
+    width: 50px;
+    height: auto;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.explore:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.explore:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.explore::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.explore::after {
+  background-color: #fff;
+}
+
+.explore:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
