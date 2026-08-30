@@ -1,0 +1,8 @@
+{
+  "name": "car-services-website",
+  "compatibility_date": "2026-08-31",
+  "assets": {
+    "directory": "./build",
+    "not_found_handling": "single-page-application"
+  }
+}
